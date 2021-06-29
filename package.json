@@ -1,0 +1,27 @@
+{
+  "name": "repo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-validator": "^6.12.0",
+    "firebase-admin": "^9.10.0",
+    "md5": "^2.3.0",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.10",
+    "@types/md5": "^2.3.0",
+    "@types/uuid": "^8.3.0"
+  },
+  "scripts": {
+    "gcloud": "npm run build && npm run gcloud:deploy",
+    "gcloud:deploy": "gcloud functions deploy serempremozzarth --trigger-http --runtime=nodejs12 --allow-unauthenticated",
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

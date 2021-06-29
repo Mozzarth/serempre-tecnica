@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "serempre-tecnica",
+  "private_key_id": "58ab29079750c9a53f4ca82e8c94806e8be6fe86",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDAyFO7k5GeVJto\nbi1GNdUZfq9OMuolDgQhXPOJLMbZ7cPvg8XFnErCCYpw2VnEM5XZG1kCK/q17bcT\nl5MMaTRUyn4PS+A91zd1Zn0QJh08zT3DyZ1iFbUmU+voX9X0tkvgd+ClbT9sSEKJ\nsBbDn4bCoDO8GlF+fgnL3cuAL4YAjzgvzQurgU1zRGi6CvEaEpl2Lye/+g03tvyT\nOYg5i5aKC+nPaQ6f2uh6PL/CXowGj/hRrTFKLPbPCU8CETQYE218NWEyWGXu1BkB\n2Ef+kUHDoMsQThgZe1zUjtdTRAE74bQck88u9Fkbe2YgqtzZajRbn8SdI4DThAnQ\nDwX99d9jAgMBAAECggEAAPD5d7EAxQUkvR3MmssofzdfI8Kb4hJvcrpBdioBzo6a\nplC+Znic5NWnF2X4Sjz2Plkj1h7g2oKOoknbLfRVjRRwCSMVtTeXzbryYWHOQr29\nz3bsjc4NVGKUhE3zfX5mYHI1Zplh9eVkbceuVMYyokCmAAUg4L08zwIGPFn/DYGj\nVIRr2HdTVEkSDX92AHAuv8Zj5gVjPDs6QT8eknuadz4KSOuZ2P+0mO2RBkBJr9lP\nS3ha/MNXzt2SFt8mfrTNsGfpIr+ddxuRyRw57ChDZ16DOUrPN+fJAOH3Umj3YMs5\ns7ZIkybNYHuV+NrkeT0txxopngqle8syRcb9lTy6AQKBgQD8+U3QFr2quhs/gkqK\nMaZiQbkwKsaU6PSTuliX9pcFjfnfnKj8i10ai34SknNfJ132OZH01hZ1bTJrjut2\nEYkp4caKF8EOgAEHX1k2FVcYXNA+QDet2WlZVcnjr3h9ItSJJo7bK3vdPUKlabJL\nDQ7bWj/d9N9rpXh9JqoYtF10fwKBgQDDFrIkeKCZbz2ww1czyeAQ1r/UDcWqNmOe\n3i3iLgPOtUQEoT3bMz+6OdBQiHgGXMxLEfx4W9LZNyLssifZVxnyosDOk5crp5jB\nF0lxmq22fuGs+A+bR0R8j5f88F1JFvf4nG5S3ZGpPXOWwxROfjwiYWwgGA4QBxnl\ne5VwTiXTHQKBgQD4xTGAMNzTx7CEA9zJiYnVlkxG0cn3Jh9eJyJ4Tka1b6kJ/UUx\nFNu5/vM70EkkidIdEQA3hVEQqRGsNB/ZO+VnCl/z7OgtGjPozBsu1E2R57Phg8U9\ncU/oSjT/cs9KP7ZCKWjSnzBvoI6pnAd5Rp4Vl+q2mtgbQ935NMyQ/s3ogQKBgFzM\nQPTERHB3z7pzUNmbn2+jFyCBZJLwyDZbrSu3g6wh4TbqlAfeuuOUeJi2MZGlNrBG\n3/dIhmU4qu44WGgz3G3kKR6aagAj+q9uqkrVrufuNt8WKCZOoi82BrAUjeskd9PU\nZU4Zgx4j0wXVyaUEuwoHmW0yxA2vswvL22vOYIOpAoGAXxaTa0XBT/gyYjU3MS7c\nV0F0z3xuH0MNTnHk3COvgaxmqAOYPduYZPdOMgi73eeoQ3nFIzMu0FAm3G1V29BB\nVeMc9GiTYqGE4AqITNSi7INQQXm6ksI7ZomYCti60K0LviJftpY40Qqr6OCixxSd\nh1OVRYfbQ4h4LRzAuuCu6w8=\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-1zi5n@serempre-tecnica.iam.gserviceaccount.com",
+  "client_id": "109789203319924554596",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-1zi5n%40serempre-tecnica.iam.gserviceaccount.com"
+}
