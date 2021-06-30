@@ -1,4 +1,4 @@
-import { validRouter } from './express-validator.midd'
+import { validRouter } from '../express-validator.midd'
 import { body, param } from 'express-validator'
 
 export function userCreate() {
@@ -15,6 +15,14 @@ export function userCreate() {
             .exists()
             .isString()
             .isLength({ min: 8 }),
+        body("points", "Points es array required")
+            .isArray()
+            .exists(),
+        body("points.*.quantity", "quantity is number required > 0")
+            .isInt({ min: 0 }),
+        body("points.*.reason", "password is required and min lenght is 2")
+            .isString()
+            .isLength({ min: 2 }),
         validRouter
     ]
 }

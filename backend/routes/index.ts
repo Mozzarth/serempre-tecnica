@@ -1,5 +1,5 @@
 import { pathNotFound } from '../middlewares/rout-notfound.midd'
-import { rtUser } from './user.routes'
+import { rtUser } from './user/user.routes'
 import { Router } from 'express'
 
 

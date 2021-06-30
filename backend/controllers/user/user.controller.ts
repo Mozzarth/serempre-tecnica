@@ -1,9 +1,9 @@
-import { UserCreate, userCreate } from '../../app/user/create/app/user-create.use'
-import { userFind, UserFind } from '../../app/user/find/app/user-find.use'
-import { userDelete, UserDelete } from '../../app/user/delete/app/user-delete.use'
-import { Request, Response, NextFunction } from 'express'
+import { UserCreate, userCreate } from '../../../app/user/create/app/user-create.use'
+import { userUpdate, UserUpdate } from '../../../app/user/update/app/user-update.use'
+import { userDelete, UserDelete } from '../../../app/user/delete/app/user-delete.use'
+import { userFind, UserFind } from '../../../app/user/find/app/user-find.use'
 import { IUserCreateDto, IUserUpdateDto } from './user.dto'
-import { userUpdate, UserUpdate } from '../../app/user/update/app/user-update.use'
+import { Request, Response, NextFunction } from 'express'
 import md5 from 'md5'
 
 class UserController {
@@ -18,10 +18,10 @@ class UserController {
     async create(req: Request, res: Response, next: NextFunction) {
         try {
             const user: IUserCreateDto = req.body
-            const { name, email, password } = user
-            const newUSer = await this.createUseCase.handle({ name, email, password : md5(password) })
+            const { name, email, password, points } = user
+            const newUSer = await this.createUseCase.handle({ name, email, password: md5(password), points })
             const { id } = newUSer.toPrimitives()
-            res.status(201).json({ id, name, email })
+            res.status(201).json({ id, name, email, points })
         } catch (error) {
             next(error)
         }
@@ -29,8 +29,9 @@ class UserController {
     async update(req: Request, res: Response, next: NextFunction) {
         try {
             const id = req.params.id
-            const body: IUserUpdateDto = req.body
-            const newUser = await this.updateUser.handle({ id, email: body.email, name: body.name, password: body.password })
+            const { email, name, password, points }: IUserUpdateDto = req.body
+            let passwordEncript = password ? md5(password) : undefined
+            const newUser = await this.updateUser.handle({ id, email, name, password: passwordEncript })
             res.status(200).json(newUser.toPrimitives())
         } catch (error) {
             next(error)

@@ -12,7 +12,8 @@ export class UserFind {
             const users = await this.userFind.all()
             return users.map(user => {
                 const tempUSer = user.toPrimitives()
-                return { id: tempUSer.id, name: tempUSer.name, email: tempUSer.email }
+                const points = tempUSer.points
+                return { id: tempUSer.id, name: tempUSer.name, email: tempUSer.email, points }
             })
         } catch (error) {
             throw error
