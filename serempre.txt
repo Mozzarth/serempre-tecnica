@@ -1,0 +1,9 @@
+sdk google = https://cloud.google.com/sdk/docs/quickstart#windows
+
+deploy local = https://cloud.google.com/functions/docs/deploying/filesystem
+
+
+https://firebase.google.com/docs/firestore/query-data/queries?hl=es
+https://googleapis.dev/nodejs/firestore/latest/CollectionReference.html#get
+
+gcloud functions deploy serempremozzarth --trigger-http --runtime=nodejs12 --allow-unauthenticated
